@@ -38,6 +38,10 @@ def parse_args():
     return p.parse_args()
 
 def main():
+
+    keys=os.environ["LLM_API_KEY"]
+    print("KEY:",keys)
+
     args=parse_args()
     log.info("开始读取文件: %s",args.src)
 
